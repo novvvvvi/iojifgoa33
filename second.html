@@ -1,0 +1,85 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="second.js"></script>
+
+
+
+</head>
+<div class="login-page">
+
+  <div class="form">
+
+    <img src="logo.png" width="200" />
+
+    <form class="login-form">
+      <p>select:
+        <select id="age" name="age" class = "form-control">
+            <option value="1">USER:PASSWORD AUTHORIZE</option>
+            <option value="2">RESET PROXIES</option>
+            <option value="3">IP AUTHORIZE</option>   
+        </select>
+    </p>
+
+    <form class="login-form" method="post" enctype="multipart/form-data"  action ="third.php">
+
+
+       <div id="first">
+
+    <label>username:</label>
+            <input type="text" id="username" class ="form-control"/>
+       
+        <p><label>password:</label>
+            <input type="text" id="password" class ="form-control"/>
+        </p>
+         <button type ="button" id="newusepass">send</button>
+        
+
+        </div>
+      </form>
+
+      
+     
+       <div id="second" >
+        <p>You can reset your proxies using this method.
+        </p>
+        <p>If proxies are failing </br> please check your IP or USER:PASS </br> is it same as Current Authorized
+        </p>
+       
+         <button type ="button" id ="reset" name ="reset">send</button> 
+        
+    </div>
+
+        
+     
+       <div id="third">
+        <p>New IP Address:
+            <input type="text" id ="newip" name ="newip" class ="form-control"/>
+        </p>
+        <p>
+          &nbsp;
+        </p>
+         <button type ="button" id ="ipcon" name ="ipcon" >send</button>
+</div>
+    </form>
+	<p> Current Authorized</p>
+	<p>127.0.0.1</p>  
+</div>
+</div>
+
+</html>
